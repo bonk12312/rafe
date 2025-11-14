@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Terminal, Activity, Trophy, HelpCircle } from 'lucide-react';
+import { Terminal, Activity, Trophy, HelpCircle, Twitter } from 'lucide-react';
 import Hero from './components/Hero';
 import ActivityLog from './components/ActivityLog';
 import Bounties from './components/Bounties';
@@ -10,7 +10,17 @@ function App() {
   const [solBalance] = useState(2.847);
 
   return (
-    <div className="min-h-screen bg-black text-green-400 font-mono p-4 md:p-8">
+        <div className="min-h-screen bg-black text-green-400 font-mono p-4 md:p-8 relative">
+      <a
+        href="https://x.com/rafealgorithm"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-black p-4 rounded-full shadow-lg hover:bg-green-400 transition-all hover:scale-110 z-50"
+        aria-label="Follow on X/Twitter"
+      >
+        <Twitter size={24} />
+      </a>
+
       <div className="max-w-7xl mx-auto border-4 border-green-500 rounded-lg overflow-hidden shadow-2xl">
         <div className="bg-gray-900 border-b-2 border-green-500 p-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
